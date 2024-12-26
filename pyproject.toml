@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "stems kernel"
+version = "0.1.0"
+description = "Python environment for the stems project"
+authors = ["malo-renaudin <malo.renaudin@hec.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+gradio = "^5.9.1"
+demucs = "^4.0.1"
+musdb = "^0.4.2"
+numpy = "^2.2.1"
+torchaudio = "^2.5.1"
+soundfile = "^0.12.1"
+ffmpeg = "^1.4"
+ffmpeg-python = "^0.2.0"
+ipykernel = "^6.29.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
